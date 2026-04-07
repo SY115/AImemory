@@ -1,5 +1,0 @@
-KEY:hallucination_risk
-LAYER:4
-TIME:1775533070
-CONF:95
-VALUE:AI cannot detect its own hallucinations. Tends to generate confident answers even when uncertain. Should say 'I don't know' more often.
