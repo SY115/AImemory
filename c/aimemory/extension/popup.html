@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 320px; font-family: 'Segoe UI', sans-serif; background: #1a1a2e; color: #eee; }
+.header { padding: 12px; background: #16213e; border-bottom: 1px solid #333; }
+.header h1 { font-size: 14px; color: #4fc3f7; }
+.header small { color: #888; font-size: 10px; }
+.status { padding: 8px 12px; display: flex; align-items: center; gap: 8px; }
+.dot { width: 8px; height: 8px; border-radius: 50%; }
+.dot.on { background: #44ff44; }
+.dot.off { background: #ff4444; }
+.stats { padding: 8px 12px; }
+.stats table { width: 100%; font-size: 11px; }
+.stats td { padding: 2px 4px; }
+.stats td:last-child { text-align: right; color: #4fc3f7; }
+.search { padding: 8px 12px; }
+.search input { width: 100%; padding: 6px 8px; background: #0f3460; border: 1px solid #333; color: #eee; border-radius: 4px; font-size: 12px; }
+.results { padding: 4px 12px; max-height: 200px; overflow-y: auto; }
+.result { padding: 6px; margin: 4px 0; background: #16213e; border-radius: 4px; font-size: 11px; }
+.result .key { color: #4fc3f7; font-weight: bold; }
+.result .layer { color: #888; font-size: 10px; }
+.result .val { color: #aaa; margin-top: 2px; }
+.footer { padding: 8px 12px; text-align: center; font-size: 10px; color: #555; border-top: 1px solid #333; }
+</style>
+</head>
+<body>
+<div class="header">
+    <h1>AImemory</h1>
+    <small>Anti-Hallucination Engine v0.1 by SY115</small>
+</div>
+<div class="status">
+    <div class="dot" id="statusDot"></div>
+    <span id="statusText" style="font-size:12px;"></span>
+</div>
+<div class="stats" id="statsBox"></div>
+<div class="search">
+    <input type="text" id="searchInput" placeholder="Search memory..." />
+</div>
+<div class="results" id="resultsBox"></div>
+<div class="footer">Data stored locally on your machine. Privacy first.</div>
+<script src="popup.js"></script>
+</body>
+</html>
