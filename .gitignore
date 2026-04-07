@@ -1,0 +1,21 @@
+# Local memory data - NEVER upload
+data/
+*.mem
+
+# Build artifacts
+aimemory
+aimemory.exe
+aimemory-server
+aimemory-server.exe
+*.o
+*.obj
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+*.swp
+*.swo

@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "AImemory - Anti-Hallucination Engine",
+  "version": "0.1.0",
+  "description": "Reduces AI hallucinations with six-layer memory, context verification, and forced self-checking. By Jiayi Sun (SY115).",
+  "permissions": ["activeTab", "storage"],
+  "host_permissions": ["http://127.0.0.1:7890/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icon48.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chat.openai.com/*",
+        "https://chatgpt.com/*",
+        "https://gemini.google.com/*",
+        "https://claude.ai/*",
+        "https://*.anthropic.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

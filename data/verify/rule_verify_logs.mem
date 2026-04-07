@@ -1,0 +1,5 @@
+KEY:rule_verify_logs
+LAYER:5
+TIME:1775533070
+CONF:100
+VALUE:RULE: Before claiming a crash log is clean, verify no Driver Verifier markers (VRF, 'Driver Verifier: Applied') exist in the log.

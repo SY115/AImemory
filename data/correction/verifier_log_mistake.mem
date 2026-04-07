@@ -1,0 +1,5 @@
+KEY:verifier_log_mistake
+LAYER:3
+TIME:1775533070
+CONF:100
+VALUE:AI claimed crash log was clean but it contained VRF (Driver Verifier) markers. User caught this via cross-checking with Gemini. Must always verify log cleanliness before submission.

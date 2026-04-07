@@ -1,0 +1,5 @@
+KEY:rule_ask_before_send
+LAYER:5
+TIME:1775533070
+CONF:100
+VALUE:RULE: Never suggest sending full vulnerability details before receiving a formal offer. Send summary first, negotiate, then deliver.
